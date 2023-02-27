@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center ;
+    margin: 0;
+    padding: 0 24px;
+    font-family: "Poppins";
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+.container {
+    background: white;
+    width: 90% ;
+    padding: 70px 30px 44px;
+    border-radius: 1.25rem;
+    text-align: center;
+}
+
+.container > h2 {
+    font-size: 36px;
+    margin: 0 0 25px;
+}
+
+.container > h3 {
+    color: gray;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.login-form {
+    display: grid;
+    gap: 30px;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.login-form > button {
+    height: 56px;
+    outline: none;
+    padding: 0;
+    font-family: inherit;
+    width: 120px;
+    background: transparent;
+    border: 0;
+    transition: 0.2s ease-in-out;
+    border-radius: 1.25px;
+    cursor: pointer;
+}
+
+.login-form > button:hover {
+    background: black;
+    color: white;
+}
+
+.input-container > i {
+    font-size: 30px;
+    padding: 10px;
+    float: left;
+}
+
+.input-container > input {
+    place-items: center;
+    height: 56px;
+    outline: none;
+    padding: 0;
+    font-family: inherit;
+    width: 240px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid gray;
+    font-size: 17px;
+}
+
+.input-container > input:focus {
+    border-bottom: 2px solid black;
+}
+
+.show-pass {
+    font-size: 15px;
+}    

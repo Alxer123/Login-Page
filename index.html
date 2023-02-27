@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Welcome back!</h3>
+        <h2>Alxer</h2>
+        <form class="login-form">
+            <div class="input-container">
+                <i class='bx bxs-user-circle'></i>
+                <input type="text" placeholder="Enter your username">
+            </div>
+
+            <div class="input-container">
+                <i class='bx bxs-lock-alt'></i>
+                <input type="password" placeholder="Enter your password" id="myInput">
+            </div>
+            <div class="show-pass">
+                <input type="checkbox" onclick="myFunction()">Show Password
+            </div>
+
+            <button type="submit">LOGIN</button>
+            <a href="#">Forget your password?</a>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
