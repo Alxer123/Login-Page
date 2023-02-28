@@ -19,9 +19,14 @@ body {
 
 .container {
     background: white;
-    width: 90% ;
+    width: 40% ;
     padding: 70px 30px 44px;
     border-radius: 1.25rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    translate: -50% -50%;
     text-align: center;
 }
 
@@ -50,41 +55,64 @@ body {
     padding: 0;
     font-family: inherit;
     width: 120px;
-    background: transparent;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     border: 0;
-    transition: 0.2s ease-in-out;
-    border-radius: 1.25px;
+    transition: all 0.3s;
+    border-radius: 10px;
     cursor: pointer;
+    color: white !important;
+    font-weight: 500 ;
+    letter-spacing: 2px ;
 }
 
 .login-form > button:hover {
-    background: black;
-    color: white;
+    letter-spacing: 5px;
 }
 
 .input-container > i {
-    font-size: 30px;
+    font-size: 35px;
     padding: 10px;
     float: left;
+    opacity: 0.5;
 }
 
 .input-container > input {
-    place-items: center;
-    height: 56px;
+    height: 45px;
     outline: none;
     padding: 0;
     font-family: inherit;
-    width: 240px;
+    width: 270px;
     background: transparent;
     border: 0;
     border-bottom: 2px solid gray;
-    font-size: 17px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .input-container > input:focus {
     border-bottom: 2px solid black;
+    
+}
+
+.input-container > input:focus::placeholder {
+    color: black;
 }
 
 .show-pass {
     font-size: 15px;
 }    
+
+@media (width < 450px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (width < 850px) {
+    .container {
+        width: 90%;
+    }
+}
